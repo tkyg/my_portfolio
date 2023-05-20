@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import './styles/navbar.css'
 import MenuIcon from '@mui/icons-material/Menu';
+import '../styles/navbar.css'
 
 const NavBar = () => {
   const [expandNavBar, setExpandNavBar] = useState(false)
@@ -22,10 +22,9 @@ const NavBar = () => {
         </button>
       </div>
       <div className='links'>
-        <p>Tenzin Tenkyong</p>
-        <Link to="/">Home</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/experience">Experience</Link>
+        <Link to="/">HOME</Link>
+        <Link to="/projects">PROJECTS</Link>
+        <Link to="/experience">EXPERIENCE</Link>
       </div>
     </div>
   )
