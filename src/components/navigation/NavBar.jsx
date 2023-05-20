@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import MenuIcon from '@mui/icons-material/Menu';
 import '../styles/navbar.css'
 
 const NavBar = () => {
@@ -18,7 +17,7 @@ const NavBar = () => {
           setExpandNavBar((previous) => !previous)
           }}
         >
-          <MenuIcon />
+          <i class="fa-regular fa-bars"></i>
         </button>
       </div>
       <div className='links'>
