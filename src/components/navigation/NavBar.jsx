@@ -17,7 +17,8 @@ const NavBar = () => {
           setExpandNavBar((previous) => !previous)
           }}
         >
-          <i class="fa-regular fa-bars"></i>
+          {/* <i className="fa-regular fa-bars"></i> */}
+          <i className="fa-sharp fa-solid fa-bars fa-2xl"></i>
         </button>
       </div>
       <div className='links'>
