@@ -12,20 +12,23 @@ const ProjectCard = (props) => {
 
   return (
     <div className='project'>
-      <h1>{props.name}</h1>
-      <p>{props.description}</p>
-      <br />
-      <p className='project-skill'>SKILLS: {props.skills}</p>
-      <br/>
-      <div>
-        <button onClick={handleGitHubClick}>GitHub</button>
-        <button onClick={handleLinkClick}>{props.name}</button>
-      </div>
-      <div className='project-image'>
-        <img src={props.image} alt={props.name}/>
+      <div className='project-content'>
+        <div className='project-info'>
+          <h1>{props.name}</h1>
+          <p>{props.description}</p>
+          <br />
+          <p className='project-skill'>SKILLS: {props.skills}</p>
+          <br/>
+          <div>
+            <button onClick={handleGitHubClick}>GitHub</button>
+            <button onClick={handleLinkClick}>{props.name}</button>
+          </div>
+          </div>
+        <div className='project-image'>
+          <img src={props.image} alt={props.name}/>
+        </div>
       </div>
     </div>
-    
   )
 }
 

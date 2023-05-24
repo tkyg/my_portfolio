@@ -1,0 +1,72 @@
+.project {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  /* background-color: #808080; */
+  color: #808080;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin: 20px 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.project:hover{
+  background-color: #f1f6f6;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  flex: 1;
+}
+
+.project-info {
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+
+.project h1 {
+  color: black;
+  font-size: 24px;
+}
+
+.project p {
+  font-size: 14px;
+  color: black;
+  /* font-weight: lighter; */
+  /* font-weight: bold; */
+}
+
+.project-skill {
+  font-weight:800;
+}
+
+.project-image {
+  width: 250px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  padding: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  .project {
+    align-items: flex-start;
+  }
+
+  .project-content {
+    flex-direction: row;
+  }
+
+  .project-info {
+    margin-right: 20px;
+    flex: 1;
+  }
+}
