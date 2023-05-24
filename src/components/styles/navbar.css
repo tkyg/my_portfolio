@@ -1,8 +1,7 @@
 .navbar {
   width: 100%;
   height: 50px;
-  background: linear-gradient(to bottom, #ffffff, #fcfcfc);
-  /* background-color: black; */
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
   font-family: 'Nunito', sans-serif;
   font-size: 30px;
 }
@@ -14,7 +13,7 @@
   align-items: center;
   justify-content: center;
   color: black;
-  /* color: white; */
+  font-weight: 300;
 }
 
 .topRight{
