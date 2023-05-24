@@ -21,7 +21,7 @@ const ProjectCard = (props) => {
           <br/>
           <div>
             <button onClick={handleGitHubClick}>GitHub</button>
-            <button onClick={handleLinkClick}>{props.name}</button>
+            {props.link && <button onClick={handleLinkClick}>{props.name}</button>}
           </div>
           </div>
         <div className='project-image'>
