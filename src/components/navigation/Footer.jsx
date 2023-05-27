@@ -19,7 +19,7 @@ const Footer = () => {
           <span>MEDIUM</span>
         </a>
       </div>
-      <p>&copy; Tenzin Tenkyong 2023</p>
+      <p> Designed & Developed by Tenzin Tenkyong 2023</p>
     </div>
   );
 };

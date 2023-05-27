@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import '../styles/home.css'
 import TenzinResume from '../public/TenzinResume.pdf'
+import emailjs from '@emailjs/browser';
 
 const Home = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_qigqb4c', 'template_6z0ywdx', form.current, 'Rvy3D87jWtgL53MtZ')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
  
   return (
     <div className='home'>
@@ -75,6 +89,20 @@ const Home = () => {
           <br/>
         </ol>
       </div>
+      <section>
+        <div>
+          <h2>Contact Me</h2>
+          <form ref={form} onSubmit={sendEmail}>
+            <label>Name</label>
+            <input type="text" name="user_name" />
+            <label>Email</label>
+            <input type="email" name="user_email" />
+            <label>Message</label>
+            <textarea name="message" />
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+      </section>
     </div>
   )
 }

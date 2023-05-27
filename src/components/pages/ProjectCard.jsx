@@ -3,13 +3,6 @@ import '../styles/projectcard.css'
 
 const ProjectCard = (props) => {
 
-  const handleGitHubClick = () => {
-    window.open(props.github, '_blank')
-  }
-  const handleLinkClick = () => {
-    window.open(props.link, '_blank')
-  }
-
   return (
     <div className='project'>
       <div className='project-content'>
@@ -19,9 +12,9 @@ const ProjectCard = (props) => {
           <br />
           <p className='project-skill'>SKILLS: {props.skills}</p>
           <br/>
-          <div>
-            <button onClick={handleGitHubClick}>GitHub</button>
-            {props.link && <button onClick={handleLinkClick}>{props.name}</button>}
+          <div className='siteLink'>
+            <a href={props.github} target='_blank' rel="noopener noreferrer">GITHUB</a>
+            {props.link && <a href={props.link} target='_blank' rel="noopener noreferrer">{props.name}</a>}
           </div>
           </div>
         <div className='project-image'>
