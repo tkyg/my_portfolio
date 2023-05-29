@@ -5,6 +5,11 @@
   font-weight: 200;
   margin-left: 0;
   padding-left: 0;
+  overflow-x: hidden;
+}
+
+section{
+  margin-bottom: 80px;
 }
 
 .name {
@@ -25,18 +30,20 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 50px;
   color: #e9d35b;
-  height: 100vh;
+  /* height: 100vh; */
+  height: auto;
 }
 
 .intro .prompt {
-  width: 40%;
+  /* width: 40%; */
+  width: 80%;
   font-size: 30px;
 }
 /* This is my social media names*/
 .intro .prompt a {
   color: black;
   text-decoration: none;
-  margin: 0; 
+  /* margin: 0;  */
   margin-top: 10px;
   margin-left: 10px;
   font-family: 'Nunito', sans-serif;
@@ -65,7 +72,7 @@
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
-  height: 100vh;
+  height: auto;
 }
 
 .aboutme a{
@@ -74,10 +81,11 @@
   padding: 0 .25rem;
   margin: 0 -.25rem;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  border-radius: 3px;
 }
 
 .aboutme a:hover{
-  color: #fff;
+  color: #54b3d6;
   box-shadow: inset 200px 0 0 0 #54b3d6;
 }
 .aboutme h1 {
@@ -85,13 +93,12 @@
 }
 
 .skills {
-  font-size: 30px;
-  /* min-height: 100vh; */
+  /* font-size: 30px; */
   width: 100%;
   display: flex;
   justify-content: left;
+  /* justify-content: center; */
   font-weight: 300;
-  /* flex-direction: column; */
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -102,7 +109,6 @@
   box-sizing: border-box;
   padding-left: 40px;
   padding-right: 40px;
-  /* height: 100vh; */
 }
 .list h2 {
   font-size: 20px;
@@ -114,6 +120,110 @@
   font-weight: 400;
 }
 
+.contact-me {
+  /* width: 100%;
+  max-width: 400px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-family: 'Nunito', sans-serif; */
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-family: 'Nunito', sans-serif;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); */
+}
+
+.contact-me p{
+  width: fit-content;
+  cursor: pointer;
+  justify-content: left;
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  font-size: 25px;
+  font-weight: lighter;
+  color: black;
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  border-radius: 3px;
+}
+
+.contact-me p:hover{
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 #54b3d6;
+}
+
+.contact-me p i {
+  margin-left: 0.55rem;
+}
+
+/* .contact-me h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+} */
+
+.contact-me form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  width: 500px;
+  justify-content: center;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); */
+}
+
+.contact-me label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-me input,
+.contact-me textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contact-me textarea {
+  resize: vertical;
+}
+
+.contact-me input[type='submit'] {
+  width: auto;
+  padding: 8px 20px;
+  background-color: #54b3d6;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  /* background-color: #54b3d6;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer; */
+}
+
+.contact-me input[type='submit']:hover {
+  background-color: #438ba1;
+}
+
+
 @media only screen and (max-width: 600px) {
   .intro{
     width: 100%;
@@ -124,25 +234,47 @@
     padding-left: 0;
   }
   .intro h2 {
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 32px;
   }
 
   .intro .prompt {
     margin-top: 10px;
     font-size: 20px;
+    /* font-size: 24px; */
     width: 100%;
   }
 
-  .name{
+  .name {
     width: 100%;
     font-size: 60px;
+    /* font-size: 80px; */
   }
 
-  .skills {
+  /* .contact-me {
+    padding: 10px;
+  } */
+  .contact-me form {
+    max-width: 200px;
+  }
+  /* .contact-me form {
+    grid-template-columns: 1fr;
+  } */
+
+  .contact-me input[type='submit'] {
+    padding: 8px 16px;
+    width: 100%;
+  }
+  /* .contact-me form {
+    width: auto;
+  } */
+
+  /* .skills {
     text-align: center;
-  }
+  } */
   
-  .skills h2 {
+  /* .skills h2 {
     font-size: 30px;
-  }
+  } */
+
 }
