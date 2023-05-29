@@ -25,7 +25,7 @@ const Home = () => {
 
   const handleContactClick = (e) => {
     e.preventDefault();
-    setShowContactForm(true);
+    setShowContactForm((prevShowContactForm) => !prevShowContactForm);;
     setShowThankYou(false);
   };
  
@@ -115,9 +115,6 @@ const Home = () => {
             CONTACT ME
             <i className="fa fa-envelope"></i>
             </p>
-            {/* <p onClick={handleContactClick}>
-            CONTACT ME
-            </p> */}
             {showContactForm && (
               <form ref={form} onSubmit={sendEmail}>
                 <label htmlFor='user_name'>Name</label>

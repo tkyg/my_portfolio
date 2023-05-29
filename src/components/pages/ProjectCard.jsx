@@ -13,8 +13,8 @@ const ProjectCard = (props) => {
           <p className='project-skill'>SKILLS: {props.skills}</p>
           <br/>
           <div className='siteLink'>
-            <a href={props.github} target='_blank' rel="noopener noreferrer">GITHUB</a>
-            {props.link && <a href={props.link} target='_blank' rel="noopener noreferrer">{props.name}</a>}
+            <a className='redPill' href={props.github} target='_blank' rel="noopener noreferrer">THE CODE</a>
+            {props.link && <a className='bluePill' href={props.link} target='_blank' rel="noopener noreferrer">THE RESULT</a>}
           </div>
           </div>
         <div className='project-image'>
