@@ -202,7 +202,7 @@ section{
 }
 
 .contact-me input[type='submit'] {
-  width: auto;
+  width: 80px;
   padding: 8px 20px;
   background-color: #54b3d6;
   color: #ffffff;
@@ -263,7 +263,7 @@ section{
 
   .contact-me input[type='submit'] {
     padding: 8px 16px;
-    width: 100%;
+    width: 50%;
   }
   /* .contact-me form {
     width: auto;

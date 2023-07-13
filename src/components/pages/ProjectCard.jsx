@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
       <div className='project-content'>
         <div className='project-info'>
           <h1>{props.name}</h1>
-          <p>{props.description}</p>
+          <p style={{ fontSize: '15px' }}>{props.description}</p>
           <br />
           <p className='project-skill'>SKILLS: {props.skills}</p>
           <br/>
