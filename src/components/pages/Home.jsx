@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import '../styles/home.css'
+import TenzinTenkyongResume from '../public/TenzinTenkyongResume.pdf'
 import TenzinResume from '../public/TenzinResume.pdf'
 import emailjs from '@emailjs/browser';
 
@@ -66,7 +67,7 @@ const Home = () => {
             <br/>
             <p>Let's connect and explore how we can collaborate to create innovative and engaging web applications. I'm excited to embark on this journey together.</p>
             <br/>
-            <a href={TenzinResume} target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", color: "black"}}>View Résumé <i className="fa-solid fa-arrow-right"></i></a>
+            <a href={TenzinTenkyongResume} target="_blank" rel="noopener noreferrer" style={{textDecoration: "none", color: "black"}}>View Résumé <i className="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
       </section>
